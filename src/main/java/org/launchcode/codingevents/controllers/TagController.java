@@ -5,13 +5,16 @@ import org.launchcode.codingevents.data.TagRepository;
 import org.launchcode.codingevents.models.Tag;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.ui.Model;
 import org.springframework.validation.Errors;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.ui.Model;
 
+/**
+ * Created by Chris Bay
+ */
 @Controller
 @RequestMapping("tags")
 public class TagController {
@@ -23,7 +26,7 @@ public class TagController {
     public String displayTags(Model model) {
         model.addAttribute("title", "All Tags");
         model.addAttribute("tags", tagRepository.findAll());
-        return "tag/index";
+        return "tags/index";
     }
 
     @GetMapping("create")
