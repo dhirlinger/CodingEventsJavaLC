@@ -15,7 +15,7 @@ FUTURE PLANS
 In addition to an upgrade on the frontend design several functional upgrades are needed. These upgrades are listed below: 
 
 - Each event needs a date and time.
-- The app needs a boolean to determine if a user is signed in
+- The app after user class is added, app will need a boolean to determine if a user is signed in
 - and user id of the current signed in user should be used to grab addtional data to display such as - greeting, user only options like viewing, adding, editing, and deleting user parameters.
   
 - A user class is need with the following parameters
